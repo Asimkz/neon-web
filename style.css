@@ -102,7 +102,13 @@ a:hover {
     height: 100%;
     max-width: 100%;
 }
-
+.header-section-img-2{
+    background-image: url(images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width: 100%;
+}
 .first-nav-last-child {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -1545,6 +1551,12 @@ a:hover {
     animation: shadow-pulse 1s infinite;
     z-index: 0;
 }
+@media (max-width: 500.91px) {
+    .ring{
+    display: none;
+    }
+}
+
 
 @keyframes shadow-pulse {
 
@@ -1969,16 +1981,19 @@ footer {
 }
 
 @media (max-width: 575.98px) {
-    .card-img-in-img {
-        max-width: 100%;
-        height: 31%;
-        position: absolute;
-        top: 234px;
-        left: 95px;
-        right: 0px;
-        bottom: 0px;
-    }
+    .header-section-img-2{
+       display: none;
+    }}
 
+    @media (max-width: 575.98px) {
+        .after-img-main-two{
+           display: none;
+        }}
+
+       @media (max-width: 575.98px) {
+        .after-img-main{
+               display: none;
+            }
     .card-heading h3 {
         -webkit-text-stroke: 1px #4b4789;
         -webkit-text-fill-color: transparent;
@@ -2362,9 +2377,14 @@ padding: 8px;
     width: 100%;
     border-radius: 30px 30px 30px 30px;
 } */
-@media (max-width:2488.991px) {
+@media (max-width:2488.1200px) {
     .cards-nav-item{
        margin-right: 65px;
+    }
+}
+@media (max-width:1200.91px) {
+    .cards-nav-item{
+       margin-right: 0px;
     }
 }
 .card-text li{
